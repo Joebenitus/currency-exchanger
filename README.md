@@ -39,4 +39,4 @@ _If you have any questions or ideas on how to improve this project, feel free to
 
 *This project is licensed under an MIT license.*
 
-Copyright (c) 2020 **_Joseph Karnafel, Alex Goodwin, & Chloe Hellberg_**
+Copyright (c) 2020 **_Joseph Karnafel_**
