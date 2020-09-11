@@ -7,12 +7,14 @@ import currencyCodes from "./js/codes.js"
 
 $(document).ready(function() {
   $("#btn-submit").click(function() {
-    let usd = parseFloat($("#dollar-amt").val());
-    let currency = $("#currency").val().toUpperCase();
-    let promise = Exchange.convert();
+    let currency1 = $("#currency1").val().toUpperCase();
+    let currency2 = $("#currency2").val().toUpperCase();
+    let amount = parseFloat($("#amount").val());
+    let promise = Exchange.convert(currency1);
     promise.then(function(response) {
       const body = JSON.parse(response);
-      $(".showConversion").text(`${usd} US dollars equals ${(parseFloat(body.conversion_rates[currency]) * usd).toFixed(2)} ${currencyCodes[currency]}`);
+      let conversion = (parseFloat(body.conversion_rates[currency2]) * amount).toFixed(2)
+      $(".showConversion").text(`${amount} ${currencyCodes[currency1]} = ${conversion} ${currencyCodes[currency2]}`);
     }, function(error) {
       $(".showError").text(`There was an error processing your request: ${error}`);
     })
