@@ -15,7 +15,10 @@ $(document).ready(function() {
       promise.then(function(response) {
         const body = JSON.parse(response);
         let conversion = (parseFloat(body.conversion_rates[currency2]) * amount).toFixed(2)
-        $(".showConversion").text(`${amount} ${currencyCodes[currency1]} = ${conversion} ${currencyCodes[currency2]}`);
+        $("#result1-card-title").text(currencyCodes[currency1]);
+        $("#result1-card").text(amount);
+        $("#result2-card-title").text(currencyCodes[currency2]);
+        $("#result2-card").text(conversion);
       }, function(error) {
         $(".showError").text(`There was an error processing your request: ${error}`);
       })

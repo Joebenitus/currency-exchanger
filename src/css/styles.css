@@ -1,5 +1,5 @@
 .top-margin {
-  margin-top: 20;
+  margin-top: 20px;
 }
 
 button {
@@ -16,4 +16,12 @@ button {
 
 h3 {
   text-align: center;
+}
+
+#result-row {
+  text-align: center;
+}
+
+#result1-card #result2-card {
+  font-size: 20px;
 }
