@@ -4,7 +4,31 @@ const currencyCodes = {
   "CAD": "Canadian Dollars.",
   "EUR": "Euro.",
   "INR": "Indian Rupees.",
-  "JPY": "Japanese Yen."
+  "JPY": "Japanese Yen.",
+  "ARS": "Argentine Pesos.",
+  "CNY": "Chinese Renminbi.",
+  "COP": "Columbian Pesos.",
+  "CZK": "Czech Koruna.",
+  "EGP": "Egyptian Pounds.",
+  "HKD": "Hong Kong Dollars.",
+  "HRK": "Croatian Kuna.",
+  "IDR": "Indonesian Rupiah.",
+  "ILS": "Israeli New Shekels.",
+  "ISK": "Icelandic Krona.",
+  "KRW": "South Korean Won.",
+  "KZT": "Kazakhstani Tenge.",
+  "NOK": "Norwegian Krone.",
+  "NZD": "New Zealand Dollars.",
+  "PHP": "Philippine Pesos.",
+  "PKR": "Pakistani Rupees.",
+  "PLN": "Polish Zloty.",
+  "RON": "Romanian Leu.",
+  "RUB": "Russian Ruble.",
+  "SEK": "Swedish Krona.",
+  "SGD": "Singapore Dollars.",
+  "TRY": "Turkish Lira.",
+  "UAH": "Ukrainian Hryvnia.",
+  "USD": "United States Dollars."
 }
 
 export default currencyCodes
