@@ -12,7 +12,7 @@ This project was made to practice promises, asynchrony, API's, static methods. T
 
 * _open terminal_
 * _type "cd desktop", then press enter_
-* _type "git clone {URL}", then press enter_
+* _type "git clone https://github.com/Joebenitus/currency-exchanger", then press enter_
 * _type "cd currency-exchanger", then press enter_
 * _type "touch .env", then press enter_
 * _navigate to this website https://www.exchangerate-api.com/#pricing and choose the free option_
