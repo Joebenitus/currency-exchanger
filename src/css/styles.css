@@ -1,3 +1,23 @@
+body {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.card {
+  background-color: rgb(36, 36, 36);
+  border: 2px solid wheat;
+}
+
+.card-codes {
+  background-color: rgb(0, 0, 0);
+}
+
+.jumbotron {
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+  border: 2px solid wheat;
+}
+
 .top-margin {
   margin-top: 20px;
 }
