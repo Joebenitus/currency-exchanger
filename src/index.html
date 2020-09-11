@@ -4,46 +4,65 @@
 </head>
 <body>
   <div class="container">
-      <label for="dollar-amt">Dollars (USD):</label>
-      <input id="dollar-amt" type="text">
-      <label for="currency">Currency to convert to (3 letter code):</label>
-      <input id="currency" type="text">
-      <button class="btn btn-dark" id="btn-submit">Convert</button>
-    <div class="showConversion"></div>
-    <div class="showError"></div>
-    <h5 class="currencyCodes">Accepted Currency Codes:</h5>
-    <p>
-      MXN - Mexican Pesos<br>
-      AUD - Australian Dollars<br>
-      CAD - Canadian Dollars<br>
-      EUR - Euro<br>
-      INR - Indian Rupee<br>
-      JPY - Japanese Yen<br>
-      ARS - Argentine Pesos<br>
-      CNY - Chinese Renminbi<br>
-      COP - Columbian Pesos<br>
-      CZK - Czech Koruna<br>
-      EGP - Egyptian Pounds<br>
-      HKD - Hong Kong Dollars<br>
-      HRK - Croatian Kuna<br>
-      IDR - Indonesian Rupiah<br>
-      ILS - Israeli New Shekels<br>
-      ISK - Icelandic Krona<br>
-      KRW - South Korean Won<br>
-      KZT - Kazakhstani Tenge<br>
-      NOK - Norwegian Krone<br>
-      NZD - New Zealand Dollars<br>
-      PHP - Philippine Pesos<br>
-      PKR - Pakistani Rupees<br>
-      PLN - Polish Zloty<br>
-      RON - Romanian Leu<br>
-      RUB - Russian Ruble<br>
-      SEK - Swedish Krona<br>
-      SGD - Singapore Dollars<br>
-      TRY - Turkish Lira<br>
-      UAH - Ukrainian Hryvnia<br>
-      USD - United States Dollars
-    </p>
+    <div class="jumbotron">
+      <h1>Currency Converter</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title convertText">Convert</h3>
+            <label for="dollar-amt">Currency code:</label>
+            <label for="currency" class="box1">Currency code:</label><br>
+            <input id="dollar-amt" type="text">
+            <input class="box1" id="currency" type="text">
+            <h3 class="toText">to</h3>
+          </div>
+        </div>
+        <button class="btn btn-dark" id="btn-submit">Convert</button>
+        <div class="showConversion"></div>
+        <div class="showError"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="currencyCodes">Accepted Currency Codes:</h5>
+            <p>
+              MXN - Mexican Pesos<br>
+              AUD - Australian Dollars<br>
+              CAD - Canadian Dollars<br>
+              EUR - Euro<br>
+              INR - Indian Rupee<br>
+              JPY - Japanese Yen<br>
+              ARS - Argentine Pesos<br>
+              CNY - Chinese Renminbi<br>
+              COP - Columbian Pesos<br>
+              CZK - Czech Koruna<br>
+              EGP - Egyptian Pounds<br>
+              HKD - Hong Kong Dollars<br>
+              HRK - Croatian Kuna<br>
+              IDR - Indonesian Rupiah<br>
+              ILS - Israeli New Shekels<br>
+              ISK - Icelandic Krona<br>
+              KRW - South Korean Won<br>
+              KZT - Kazakhstani Tenge<br>
+              NOK - Norwegian Krone<br>
+              NZD - New Zealand Dollars<br>
+              PHP - Philippine Pesos<br>
+              PKR - Pakistani Rupees<br>
+              PLN - Polish Zloty<br>
+              RON - Romanian Leu<br>
+              RUB - Russian Ruble<br>
+              SEK - Swedish Krona<br>
+              SGD - Singapore Dollars<br>
+              TRY - Turkish Lira<br>
+              UAH - Ukrainian Hryvnia<br>
+              USD - United States Dollars
+            </p> 
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

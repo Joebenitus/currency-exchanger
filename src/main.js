@@ -8,11 +8,11 @@ import currencyCodes from "./js/codes.js"
 $(document).ready(function() {
   $("#btn-submit").click(function() {
     let usd = parseFloat($("#dollar-amt").val());
-    let currency = $("#currency").val();
+    let currency = $("#currency").val().toUpperCase();
     let promise = Exchange.convert();
     promise.then(function(response) {
       const body = JSON.parse(response);
-      $(".showConversion").text(`${usd} US dollars equals ${(parseFloat(body.conversion_rates[currency]) * usd)} ${currencyCodes[currency]}`);
+      $(".showConversion").text(`${usd} US dollars equals ${(parseFloat(body.conversion_rates[currency]) * usd).toFixed(2)} ${currencyCodes[currency]}`);
     }, function(error) {
       $(".showError").text(`There was an error processing your request: ${error}`);
     })
