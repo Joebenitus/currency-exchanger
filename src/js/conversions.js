@@ -2,7 +2,7 @@ export default class Exchange {
   static convert() {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      const url = `https://v6.exchangerate-api.com/v6/e156fbe1b3efc49ea1e76de5/latest/USD`
+      const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`
       request.onload = function() {
         if (this.status === 200) {
           resolve(request.response);
