@@ -4,24 +4,46 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron top-margin">
       <h1>Currency Converter</h1>
     </div>
-    <div class="row">
+    <div class="row top-margin">
       <div class="col-md-8">
         <div class="card">
           <div class="card-body">
             <h3 class="card-title convertText">Convert</h3>
-            <label for="dollar-amt">Currency code:</label>
-            <label for="currency" class="box1">Currency code:</label><br>
-            <input id="dollar-amt" type="text">
-            <input class="box1" id="currency" type="text">
-            <h3 class="toText">to</h3>
+            <label for="currency1">Currency code:</label>
+            <label for="currency2" class="box1">Currency code:</label><br>
+            <input id="currency1" type="text">
+            <input class="box1" id="currency2" type="text"><br>
+            <label for="amount">Amount:</label><br>
+            <input id="amount" type="text">
           </div>
         </div>
-        <button class="btn btn-dark" id="btn-submit">Convert</button>
+        <button class="btn btn-dark top-margin" id="btn-submit">Convert</button>
         <div class="showConversion"></div>
         <div class="showError"></div>
+
+        <!-- result cards -->
+        <div class="row top-margin">
+          <div class="col-md-6">
+            <div class="card result-cards">
+              <div class="card-body">
+                <h4 class="card-title" id="result1-card-title"></h4>
+                <p id="result1-card"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card result-cards">
+              <div class="card-body">
+                <h4 class="card-title" id="result1-card-title"></h4>
+                <p id="result1-card"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="col-md-4">
         <div class="card">
